@@ -1,1 +1,1 @@
-from api import ReplyApp
+from replyapp.api import ReplyApp

@@ -73,7 +73,7 @@ class ReplyApp():
         }
 
     def __call__(self, *args, **kwargs):
-        url = self.base_url.join(self._attr_path)
+        url = self.base_url + '/'.join(self._attr_path)
         for variable_name, variable_sub in kwargs.get('variable', {}).items():
             url = re.sub(variable_name, variable_sub, url)
         self._attr_path = []
