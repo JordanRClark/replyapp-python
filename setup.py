@@ -18,8 +18,8 @@ requires = [
 
 setup(
   name='replyapp-python',
-  version='0.0.1',
-  description='Python 3 api sdk for replyapp.com',
+  version='0.0.2',
+  description='Python 3 api wrapper for replyapp.io',
   author='Jordan Clark',
   author_email='jordan@blitzen.com',
   url='https://github.com/Blitzen/replyapp-python',
