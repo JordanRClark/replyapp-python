@@ -18,7 +18,7 @@ requires = [
 
 setup(
   name='replyapp-python',
-  version='0.0.2',
+  version='0.1.0',
   description='Python 3 api wrapper for replyapp.io',
   author='Jordan Clark',
   author_email='jordan@blitzen.com',
@@ -28,7 +28,7 @@ setup(
   license='MIT',
   zip_safe=False,
   classifiers=(
-    'Development Status :: 3 - Alpha',
+    'Development Status :: 4 - Beta',
     'Intended Audience :: Developers',
     'Natural Language :: English',
     'License :: OSI Approved :: MIT License',
