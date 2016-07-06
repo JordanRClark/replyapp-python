@@ -1,9 +1,10 @@
 This readme will be updated over time.
 
-ReplyApp: replyapp.io
+ReplyApp: http://replyapp.io
 ReplyApp api docs: http://support.replyapp.io/category/46-api
 
 EXAMPLES:
+
     from replyapp import ReplyApp
     ra = ReplyApp('Api_Key')
 
@@ -35,7 +36,6 @@ EXAMPLES:
     #Remove person from all campaigns
     ra.actions.removepersonfromallcampaigns(method='POST', data={'email': 'name@company.com'})
 
-
     #People
     #Listing people
     ra.people()
@@ -48,6 +48,18 @@ EXAMPLES:
     #Saving people
     ra.people(method='POST', data={'id': 2232, 'email': james@globaltech.com', 'firstName': 'James', 'lastName': 'Smith', 'company': 'Global Tech', 'title': 'VP of Marketing'})
 
-    #Deleting peiple
+    #Deleting people
     ra.people(method='DELETE', data={'email': 'name@company.com'})
     ra.people.{{ID}}(method='DELETE')
+
+    #Campaigns
+    #Listing campaigns
+    ra.campaigns()
+
+    #Getting Campaigns
+    ra.campaigns.{{ID}}()
+    ra.campaigns(data={'name': 'Name Of Campaigns'})
+
+    #Email Accounts
+    #Listing Email Accounts
+    ra.emailAccounts()
