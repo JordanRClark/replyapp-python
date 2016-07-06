@@ -1,9 +1,13 @@
-This readme will be updated over time.
+#### ReplyApp Python wrapper for Python 3.
+
 
 ReplyApp: http://replyapp.io
+
 ReplyApp api docs: http://support.replyapp.io/category/46-api
 
-EXAMPLES:
+This api utilizes the python ```__getattr__``` and ```__call__``` functions to make requests from dot-notation.
+
+#### EXAMPLES:
 
     from replyapp import ReplyApp
     ra = ReplyApp('Api_Key')
