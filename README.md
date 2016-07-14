@@ -7,12 +7,17 @@ ReplyApp api docs: http://support.replyapp.io/category/46-api
 
 This api utilizes the python ```__getattr__``` and ```__call__``` functions to make requests from dot-notation.
 
-#### EXAMPLES:
+#### Installation:
+```pip install replyapp-python```
+
+
+#### Examples:
 
     from replyapp import ReplyApp
     ra = ReplyApp('Api_Key')
 
-    #ACTIONS:
+#### Actions:
+        
     #Mark person as replied
     ra.actions.markasreplied(method='POST', data={'email': 'name@company.com'})
     ra.actions.markasreplied(method='POST', data={'domain': 'company.com'})
@@ -40,12 +45,14 @@ This api utilizes the python ```__getattr__``` and ```__call__``` functions to m
     #Remove person from all campaigns
     ra.actions.removepersonfromallcampaigns(method='POST', data={'email': 'name@company.com'})
 
-    #People
+#### People
+    
     #Listing people
     ra.people()
 
     #Getting people from id
     ra.people.{{ID}}()
+    
     #Getting people from email
     ra.people(data={'email': 'name@company.com'})
 
@@ -56,7 +63,8 @@ This api utilizes the python ```__getattr__``` and ```__call__``` functions to m
     ra.people(method='DELETE', data={'email': 'name@company.com'})
     ra.people.{{ID}}(method='DELETE')
 
-    #Campaigns
+#### Campaigns
+    
     #Listing campaigns
     ra.campaigns()
 
@@ -64,6 +72,7 @@ This api utilizes the python ```__getattr__``` and ```__call__``` functions to m
     ra.campaigns.{{ID}}()
     ra.campaigns(data={'name': 'Name Of Campaigns'})
 
-    #Email Accounts
+#### Email Accounts
+    
     #Listing Email Accounts
     ra.emailAccounts()
