@@ -72,6 +72,9 @@ class ReplyApp():
                            params=params,
                            headers=headers)
         if response.status_code < 400:
-            return response.json()
+            if response.text != '':
+                return response.json()
+            else:
+                return response.text
         else:
             response.raise_for_status()
